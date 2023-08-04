@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/8103b3ef11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="container">
+        <div class="lateral">
+            <div class="menu">
+                <div class="step">
+                    <div class="numero ativado">1</div>
+                    <div class="texto"><p class="passo">passo 1</p><span class="nomePag">Seus Dados</span></div>
+                </div>
+                <div class="step">
+                    <div class="numero">2</div>
+                    <div class="texto"><p class="passo">passo 2</p><span class="nomePag">Planos</span></div>
+                </div>
+                <div class="step">
+                    <div class="numero">3</div>
+                    <div class="texto"><p class="passo">passo 3</p><span class="nomePag">Adicionais</span></div>
+                </div>
+                <div class="step">
+                    <div class="numero">4</div>
+                    <div class="texto"><p class="passo">passo 4</p><span class="nomePag">Valor Total</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="card ativo">
+            <h1>Suas Informaçoes</h1>
+            <form class="formulario">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" class="foco" placeholder="ex. Fulano">
+                <label for="email">Email</label>
+                <input type="email" name="emai" class="foco" placeholder="@fulano.com">
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" class="foco" placeholder="(99)9999-9999">
+            </form>
+            <div class="botao">
+                <button class="nxtStep">Proximo</button>
+            </div>
+        </div>
+        <div class="card">
+            <h1 class="titulo">Selecione Seu Plano</h1>
+            <ul class="tipagem">
+                <label for="input"><li class="list listaAtivo"><input type="radio" id="input" class="escolhaPlano" name="inputRadio" value="15"><div class="planos"><h4>Basico <i class="fa-solid fa-chess-pawn icone" style="color: #000000;"></i></h4><p>R$15/mes</p></div></li></label>
+                 <label for="inputD"><li class="list listaAtivo"><input type="radio" id="inputD" class="escolhaPlano" name="inputRadio" value="22"><div class="planos"><h4>Avançado <i class="fa-solid fa-chess-bishop icone" style="color: #000000;"></i></h4><p>R$22/mes</p></div></li></label>
+                <label for="inputT"><li class="list listaAtivo"><input type="radio" id="inputT" class="escolhaPlano" name="inputRadio" value="25"><div class="planos"><h4>Mestre <i class="fa-solid fa-chess-queen icone" style="color: #000000;"></i></h4><p>R$25/mes</p></div></li></label>
+            </ul>
+            <div class="botao">
+                <button class="prevStep">Anterior</button>
+                <button class="nxtStep">Proximo</button>
+            </div>    
+        </div>
+        <div class="card">
+            <h1 class="titulo">Adicionais</h1>
+            <div class="adicionais">
+                <ul class="lista-adicionais">
+                    <label for="check"><li class="item-check"><input type="checkbox" id="check" class="checado" value="3">Adicional de Capacidade <span class="preco">+R$3/mes</span></li></label>
+                    <label for="checkD"><li class="item-check"><input type="checkbox" id="checkD"  class="checado" value="5">Adicional de Velocidade <span class="preco">+R$5/mes</span></li></label>
+                    <label for="checkT"><li class="item-check"><input type="checkbox" id="checkT"  class="checado" value="5">Adicional de Internet <span class="preco">+R$5/mes</span></li></label>    
+                </ul>
+                <div class="botao">
+                    <button class="prevStep">Anterior</button>
+                    <button class="nxtStep">Proximo</button>
+                </div>   
+            </div>    
+        </div>
+        <div class="card">
+            <h1 class="titulo">Valor Total do Pacote</h1>
+            <div class="final">
+                <div class="planoEscolhido"><p class="planoNome"></p><span class="precoPlano"></span></div>
+                <div class="before"></div>
+                <div class="adicionaisTexto"></div>
+            </div>
+            <div class="">
+                <div class="precoPagar"><h4 class="pagar">Preço a Pagar</h4><span class="valorTotal"></span></div>
+            </div>
+            <div class="botao">
+                <button class="prevStep">Anterior</button>
+                <button class="nxtStep">Concluir</button>
+            </div>  
+        </div>
+        <div class="card">
+            <div class="concluido">
+                <div><img src="icon-thank-you.svg" alt=""></div>
+                <div class="ultimo"><h2 class="ultimoTexto">OBRIGADO!!!</h2><p class="ultimoTexto">Agradecemos pela sua preferencia, esperamos que retorne a comprar conosco </p></div>
+            </div>
+        </div>  
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

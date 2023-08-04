@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(199, 199, 199, 0.658);
+}
+
+.container{
+    background-color:rgb(255, 255, 255);
+    height: 600px;
+    width: 900px;
+    display: flex;
+    border-radius: 25px;
+    box-shadow: 3px 5px 16px 0px rgba(71,71,71,0.25);
+    padding: 10px;
+}
+
+.lateral{
+    background-color:rgb(66 0 223);
+    min-width: 240px;
+    border-radius: 20px;
+}
+
+.menu{
+    margin: 50px 0 0 40px;
+}
+
+.step{
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+    align-items: center;
+}
+.passo{
+    color: rgba(228, 228, 228, 0.76);
+}
+.nomePag{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.numero{
+    cursor: pointer;
+    color: aliceblue;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: solid 1px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numero.ativado{
+    background: rgb(58, 126, 216);
+    border: none;
+}
+
+.texto{
+    color: aliceblue;
+}
+
+.card{
+    width: 100%;
+    margin: 45px 90px 0 100px;
+    display: none;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin: 30px 0 10px 0;
+}
+
+.foco:focus{
+    outline: none;
+}
+
+input{
+    margin-top: 0px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(88, 96, 122);
+}
+
+.botao{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.nxtStep, .prevStep{
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    background: rgb(66 0 223);
+    color: white;
+    cursor: pointer;
+}
+
+#inputD, #inputT, #input{
+    display: none;
+}
+
+.tipagem{
+    display: flex;
+    list-style: none;
+    margin: 20px 0 0 -26px;
+}
+
+.list{
+    height: 230px;
+    width: 150px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.planos{
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.check{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+h4{
+    margin: 10px;
+}
+
+
+
+.adicionais{
+    margin: -24px -5px;
+}
+
+.item-check{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 50px 0px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 10px;
+}
+
+.checado{
+    margin: 0 10px 0 0;
+}
+
+.preco{
+    margin-left: 255px;
+}
+
+.ativo{
+    display: block;
+}
+
+.final{
+    margin-top: 50px;
+}
+
+.planoEscolhido{
+    display: flex;
+    justify-content: space-between;
+}
+.planoNome, .precoPlano{
+    font-size: 20px;
+}
+.before::before{
+    content: '';
+    width: 500px;
+    height: 1px;
+    background: rgba(63, 63, 63, 0.596);
+    display: block;
+    margin-top: 10px;    
+}
+.novadiv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.novadiv:nth-child(3){
+    gap: 250px;
+}
+.precoPagar{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.concluido{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.ultimo{
+    margin-top: 25px;
+}
+
+@media screen and (max-width:768px) {
+    body{
+        justify-content: start;
+    }
+    .container{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+    }
+    .lateral{
+        width: 100%;
+        border-radius: 0;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 50px;
+        gap: 26px;
+    }
+    .texto{
+        display: none;
+    }
+    .card{
+        width: auto;
+    }
+    .tipagem{
+        flex-direction: column;
+    }
+    .list{
+        height: 52px;
+        width: 330px;
+        margin: 0 20px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .planos{
+        display: flex;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 9px;
+    }
+    .lista-adicionais{
+        margin-bottom: -28px;
+    }
+    .item-check{
+        margin: 35px 0;
+    }
+    .preco{
+        margin-left: 45px;
+    }
+    .botao{
+        display: flex;
+        justify-content: space-around;
+        gap: 37px;
+        margin-top: 0;
+    }
+    .nxtStep, .prevStep{
+        margin: 100px 0 0 0px;
+        padding: 20px;
+    }
+    .planoEscolhido{
+        gap: 90px;
+    
+    }
+    .novadiv{
+        margin-top: 20px;
+        gap: 65px;
+    }
+    .novadiv:nth-child(3){
+        margin-top: 20px;
+        gap: 85px;
+    }
+    .precoPagar{
+        margin-top: 20px;
+        margin-bottom: -10px;
+        gap: 115px;
+    }
+    .before::before{
+        width: auto;
+    }
+}
