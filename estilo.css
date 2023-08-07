@@ -239,7 +239,7 @@ h4{
         align-items: center;
         justify-content: center;
         margin: 0;
-        padding: 50px;
+        padding: 30px;
         gap: 26px;
     }
     .texto{
@@ -304,5 +304,98 @@ h4{
     }
     .before::before{
         width: auto;
+    }
+}
+
+@media screen and (max-width:500px){
+    body{
+        justify-content: start;
+    }
+    .container{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+    }
+    .lateral{
+        width: 100%;
+        border-radius: 0;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 30px;
+        gap: 26px;
+    }
+    .texto{
+        display: none;
+    }
+    .card{
+        width: auto;
+    }
+    .tipagem{
+        flex-direction: column;
+    }
+    .list{
+        height: 52px;
+        width: 235px;
+        margin: 0 20px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .planos{
+        display: flex;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 9px;
+    }
+    .lista-adicionais{
+        margin-bottom: -28px;
+    }
+    .item-check{
+        margin: 25px 0;
+        width: 230px;
+    }
+    .preco{
+        margin-left: 45px;
+    }
+    .botao{
+        display: flex;
+        gap: 37px;
+        margin-top: 0;
+    }
+    .nxtStep, .prevStep{
+        margin: 100px 0 0 0px;
+        padding: 20px;
+    }
+    .planoEscolhido{
+        gap: 90px;
+    
+    }
+    .novadiv{
+        margin-top: 20px;
+        gap: 65px;
+    }
+    .novadiv:nth-child(3){
+        margin-top: 20px;
+        gap: 85px;
+    }
+    .precoPagar{
+        margin-top: 5px;
+        margin-bottom: -10px;
+        gap: 115px;
+        width: 270px;
+    }
+    .before::before{
+        width: auto;
+    }
+    .final{
+        margin-top: 25px;
+        width: 270px;
     }
 }
